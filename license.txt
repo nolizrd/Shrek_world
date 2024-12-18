@@ -1,0 +1,11 @@
+Model Information:
+* title:	Shrek's Armchair
+* source:	https://sketchfab.com/3d-models/shreks-armchair-f4225101db054a0aa3cd1e5d1269b915
+* author:	scarlet_orpheus (https://sketchfab.com/scarlet_orpheus)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Shrek's Armchair" (https://sketchfab.com/3d-models/shreks-armchair-f4225101db054a0aa3cd1e5d1269b915) by scarlet_orpheus (https://sketchfab.com/scarlet_orpheus) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

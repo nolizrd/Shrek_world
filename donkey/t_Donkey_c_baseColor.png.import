@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://c0rdwqaewxpuy"
+path="res://.godot/imported/t_Donkey_c_baseColor.png-dd3224c18e13902ed919b20fc55ab8f9.image"
+
+[deps]
+
+source_file="res://donkey/t_Donkey_c_baseColor.png"
+dest_files=["res://.godot/imported/t_Donkey_c_baseColor.png-dd3224c18e13902ed919b20fc55ab8f9.image"]
+
+[params]
+

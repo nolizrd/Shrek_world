@@ -1,0 +1,11 @@
+Model Information:
+* title:	beautiful Shrek
+* source:	https://sketchfab.com/3d-models/beautiful-shrek-f1d6044f61e74112b7eb374f5e4a41d8
+* author:	Viktor_ (https://sketchfab.com/Viktor.Zhuravlev)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "beautiful Shrek" (https://sketchfab.com/3d-models/beautiful-shrek-f1d6044f61e74112b7eb374f5e4a41d8) by Viktor_ (https://sketchfab.com/Viktor.Zhuravlev) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

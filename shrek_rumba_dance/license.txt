@@ -1,0 +1,11 @@
+Model Information:
+* title:	Shrek Rumba Dance
+* source:	https://sketchfab.com/3d-models/shrek-rumba-dance-47e7184b167144b3b14c47f20c7f7892
+* author:	FreeModeler12345 (https://sketchfab.com/FreeModeler12345)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Shrek Rumba Dance" (https://sketchfab.com/3d-models/shrek-rumba-dance-47e7184b167144b3b14c47f20c7f7892) by FreeModeler12345 (https://sketchfab.com/FreeModeler12345) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpe1gvwgmsdh6"]
+
+[ext_resource type="PackedScene" uid="uid://b42dsg1pfu1ku" path="res://shrek_ogres_and_dronkeys_-_dronkey/dronkey.gltf" id="1_xadfd"]
+[ext_resource type="Script" path="res://osel.gd" id="2_elh6m"]
+
+[node name="osel" instance=ExtResource("1_xadfd")]
+
+[node name="Sketchfab_model" parent="." index="0"]
+script = ExtResource("2_elh6m")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sketchfab_model" index="1"]
+
+[node name="Camera3D" type="Camera3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.360434, -1.40781, 9.01154)

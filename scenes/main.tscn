@@ -1,0 +1,317 @@
+[gd_scene load_steps=42 format=3 uid="uid://dyq43fkw3gbeo"]
+
+[ext_resource type="Script" path="res://scenes/area_3d.gd" id="3_d00gc"]
+[ext_resource type="PackedScene" uid="uid://cguwjiam5or5x" path="res://donkey/osel.gltf" id="3_devfl"]
+[ext_resource type="ArrayMesh" uid="uid://b7dur4jns1iu6" path="res://house/T4T8E7TXVK20DN5I3E2AKBJ8W.obj" id="3_e0uwr"]
+[ext_resource type="PackedScene" uid="uid://dcrhby3josrov" path="res://boloto/source/organicsketchfabtest3.fbx" id="4_ceged"]
+[ext_resource type="Texture2D" uid="uid://c6rs6ngwfxofh" path="res://ground_textures/aerial_grass_rock_diff_1k.png" id="4_hk4dv"]
+[ext_resource type="Texture2D" uid="uid://d4i1myexd147" path="res://ground_textures/aerial_grass_rock_nor_gl_1k.png" id="5_gk8f3"]
+[ext_resource type="Texture2D" uid="uid://cjy6flt3yhg7n" path="res://ground_textures/aerial_grass_rock_rough_1k.png" id="6_de0sf"]
+[ext_resource type="PackedScene" uid="uid://5gcipifhw0h2" path="res://toilet/scene.gltf" id="7_nyoe6"]
+[ext_resource type="PackedScene" uid="uid://b4fvb76gxpmom" path="res://znak/scene.gltf" id="8_54wxa"]
+[ext_resource type="PackedScene" uid="uid://b8xowu4yy405v" path="res://oldtree/scene.gltf" id="9_xyqa0"]
+[ext_resource type="PackedScene" uid="uid://cynhgniyvf4ml" path="res://oak/scene.gltf" id="10_f7gxd"]
+[ext_resource type="PackedScene" uid="uid://dulkjfv7b32u0" path="res://oldtree2/scene.gltf" id="11_uf2jx"]
+[ext_resource type="PackedScene" uid="uid://baamh4xdex8rs" path="res://olivetree/scene.gltf" id="12_5avg6"]
+[ext_resource type="PackedScene" uid="uid://c62tf15kspj63" path="res://great_bald_cypress/scene.gltf" id="13_tjnhi"]
+[ext_resource type="PackedScene" uid="uid://b784kadjfrfe1" path="res://lianas_tree/scene.gltf" id="14_u5ygt"]
+[ext_resource type="PackedScene" uid="uid://hihlfpj4ktb4" path="res://grass/scene.gltf" id="15_c8asx"]
+[ext_resource type="PackedScene" uid="uid://cm4l16cneo7v4" path="res://donkey_pocket_shrek_and_animations/textures/sketchfab_scene.tscn" id="16_b1yj6"]
+[ext_resource type="Script" path="res://scenes/fps_camera.gd" id="17_0f77c"]
+[ext_resource type="Texture2D" uid="uid://b7pokhkh0uy68" path="res://d8dc8008fb52688095fe4c76e4786d72.png" id="17_71hxy"]
+[ext_resource type="Script" path="res://scenes/gpu_particles_3d.gd" id="18_5k4oy"]
+[ext_resource type="PackedScene" uid="uid://b42dsg1pfu1ku" path="res://shrek_ogres_and_dronkeys_-_dronkey/dronkey.gltf" id="21_h3aed"]
+[ext_resource type="PackedScene" uid="uid://cwmggouc5www" path="res://scene.gltf" id="21_xdolk"]
+[ext_resource type="Script" path="res://shrek_ogres_and_dronkeys_-_dronkey/dronkey.gd" id="22_ltxg3"]
+[ext_resource type="Script" path="res://shrek_ogres_and_dronkeys_-_dronkey/dronkey2.gd" id="23_25tq2"]
+[ext_resource type="PackedScene" uid="uid://cgg7hdbrne38n" path="res://beautiful_shrek/bs.gltf" id="25_vhv47"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nrtvg"]
+sky_top_color = Color(0.552163, 0.732612, 1, 1)
+sky_horizon_color = Color(0.996078, 0.611765, 0.45098, 1)
+
+[sub_resource type="Sky" id="Sky_nb427"]
+sky_material = SubResource("ProceduralSkyMaterial_nrtvg")
+
+[sub_resource type="Environment" id="Environment_nmc8y"]
+background_mode = 2
+background_energy_multiplier = 1.23
+sky = SubResource("Sky_nb427")
+ambient_light_source = 1
+ambient_light_color = Color(0.607843, 0.0627451, 0.223529, 0)
+ambient_light_sky_contribution = 0.1
+ambient_light_energy = 0.75
+reflected_light_source = 2
+tonemap_mode = 1
+volumetric_fog_density = 0.0
+volumetric_fog_emission_energy = 342.33
+adjustment_enabled = true
+adjustment_brightness = 0.92
+adjustment_contrast = 1.11
+adjustment_saturation = 1.57
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b7cqg"]
+albedo_color = Color(0.0995048, 0.709468, 0, 1)
+albedo_texture = ExtResource("4_hk4dv")
+roughness_texture = ExtResource("6_de0sf")
+normal_enabled = true
+normal_texture = ExtResource("5_gk8f3")
+uv1_scale = Vector3(10, 10, 10)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e3wxp"]
+material = SubResource("StandardMaterial3D_b7cqg")
+size = Vector2(2000, 2000)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kwk27"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i2x0m"]
+transparency = 1
+albedo_texture = ExtResource("17_71hxy")
+
+[sub_resource type="Gradient" id="Gradient_uccu5"]
+colors = PackedColorArray(0.265606, 0.121841, 3.60981e-08, 1, 0.312931, 0.303929, 0.00829298, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ykihu"]
+gradient = SubResource("Gradient_uccu5")
+
+[sub_resource type="Curve" id="Curve_2xxww"]
+_data = [Vector2(0.00543478, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.267895), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_sertc"]
+curve = SubResource("Curve_2xxww")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hi2c5"]
+direction = Vector3(0, 1, 0)
+initial_velocity_min = 5.0
+initial_velocity_max = 15.0
+scale_max = 1.5
+scale_curve = SubResource("CurveTexture_sertc")
+color_ramp = SubResource("GradientTexture1D_ykihu")
+
+[sub_resource type="SphereMesh" id="SphereMesh_qw8kn"]
+
+[sub_resource type="Animation" id="Animation_ypram"]
+resource_name = "FlyAround"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:Vector3(5, 3, 5")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [null]
+}
+
+[sub_resource type="Animation" id="Animation_ylsbl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:Vector3(5, 3, 5")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_buwde"]
+_data = {
+"FlyAround": SubResource("Animation_ypram"),
+"RESET": SubResource("Animation_ylsbl")
+}
+
+[node name="Main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.539419, 0.839508, 0.0652101, -0.79877, 0.48566, 0.355107, 0.266445, -0.24364, 0.932549, 0, -71.3783, -377.961)
+light_color = Color(1, 0.901961, 0.572549, 1)
+light_energy = 1.558
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_nmc8y")
+
+[node name="house" type="MeshInstance3D" parent="WorldEnvironment"]
+transform = Transform3D(17.9184, 0, 46.679, 0, 50, 0, -46.679, 0, 17.9184, 50, 50, 0)
+mesh = ExtResource("3_e0uwr")
+skeleton = NodePath("../..")
+
+[node name="boloto" parent="WorldEnvironment" instance=ExtResource("4_ceged")]
+transform = Transform3D(382.683, 0, 923.88, 0, 1000, 0, -923.88, 0, 382.683, -87.4051, -0.242413, 47.6846)
+
+[node name="ground" type="MeshInstance3D" parent="WorldEnvironment"]
+transform = Transform3D(1.00033, 0, 0, 0, 1.00033, 0, 0, 0, 0.908968, 0, 0, -29.2979)
+mesh = SubResource("PlaneMesh_e3wxp")
+
+[node name="toilet" parent="WorldEnvironment" instance=ExtResource("7_nyoe6")]
+transform = Transform3D(-16.849, 0, 10.7754, 0, 20, 0, -10.7754, 0, -16.849, 167.234, 20, 26.3872)
+
+[node name="warning" parent="WorldEnvironment" instance=ExtResource("8_54wxa")]
+transform = Transform3D(3.43643, 0, -9.391, 0, 10, 0, 9.391, 0, 3.43643, 0.360528, 7.19359, 112.571)
+
+[node name="tree2" parent="WorldEnvironment" instance=ExtResource("9_xyqa0")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 112.234, 11.6304, 32.1256)
+
+[node name="tree3" parent="WorldEnvironment" instance=ExtResource("9_xyqa0")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 273.307, 19.6826, 5.62798)
+
+[node name="tree5" parent="WorldEnvironment" instance=ExtResource("9_xyqa0")]
+transform = Transform3D(43.4571, 0, 24.7282, 0, 50, 0, -24.7282, 0, 43.4571, 309.796, 19.6826, 139.881)
+
+[node name="tree6" parent="WorldEnvironment" instance=ExtResource("9_xyqa0")]
+transform = Transform3D(48.5236, 0, -12.0605, 0, 50, 0, 12.0605, 0, 48.5236, 307.986, 19.6826, 182.394)
+
+[node name="tree1" parent="WorldEnvironment" instance=ExtResource("9_xyqa0")]
+transform = Transform3D(-6.84898, 0, 24.0435, 0, 25, 0, -24.0435, 0, -6.84898, -175.315, 11.5618, -16.346)
+
+[node name="tree4" parent="WorldEnvironment" instance=ExtResource("9_xyqa0")]
+transform = Transform3D(67.0612, 0, 20.0696, 0, 70, 0, -20.0696, 0, 67.0612, -414.733, 16.7302, -155.812)
+
+[node name="oaks" parent="WorldEnvironment" instance=ExtResource("10_f7gxd")]
+transform = Transform3D(0.51099, 0, -2.95616, 0, 3, 0, 2.95616, 0, 0.51099, 101.579, 2.14767, -96.5388)
+
+[node name="Sketchfab_Scene3" parent="WorldEnvironment" instance=ExtResource("11_uf2jx")]
+transform = Transform3D(0.513751, 0, -7.98349, 0, 8, 0, 7.98349, 0, 0.513751, 90.7697, 0.245324, 45.3183)
+
+[node name="Sketchfab_Scene4" parent="WorldEnvironment" instance=ExtResource("11_uf2jx")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 189.144, 0, 43.1335)
+
+[node name="olive_tree" parent="WorldEnvironment" instance=ExtResource("12_5avg6")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 223.947, 3.0237, -34.4433)
+
+[node name="olive_tree2" parent="WorldEnvironment" instance=ExtResource("12_5avg6")]
+transform = Transform3D(55, 0, 0, 0, 55, 0, 0, 0, 55, 319.598, 6.20844, -255.894)
+
+[node name="olive_tree4" parent="WorldEnvironment" instance=ExtResource("12_5avg6")]
+transform = Transform3D(55, 0, 0, 0, 55, 0, 0, 0, 55, 99.4124, 4.42426, -347.513)
+
+[node name="olive_tree3" parent="WorldEnvironment" instance=ExtResource("12_5avg6")]
+transform = Transform3D(70, 0, 0, 0, 70, 0, 0, 0, 70, -245.924, 6.65678, -159.395)
+
+[node name="Sketchfab_Scene2" parent="WorldEnvironment" instance=ExtResource("13_tjnhi")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -86.11, -3.03626, -200.918)
+
+[node name="Sketchfab_Scene5" parent="WorldEnvironment" instance=ExtResource("14_u5ygt")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -87.3756, 298.364, -62.6502)
+
+[node name="Sketchfab_Scene6" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(1.69859, 0, -1.05584, 0, 2, 0, 1.05584, 0, 1.69859, -51.5437, 0, 115.387)
+
+[node name="Sketchfab_Scene7" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(1.61787, 0, 1.1758, 0, 2, 0, -1.1758, 0, 1.61787, -54.0108, 0, 115.387)
+
+[node name="Sketchfab_Scene8" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -55.3124, 0, 115.387)
+
+[node name="Sketchfab_Scene10" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -21.8655, 0, 16.0234)
+
+[node name="Sketchfab_Scene11" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(1.49409, 0, -1.32955, 0, 2, 0, 1.32955, 0, 1.49409, -14.7691, 0, 22.6461)
+
+[node name="Sketchfab_Scene12" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.912488, 0, -1.77971, 0, 2, 0, 1.77971, 0, -0.912488, -29.3345, 0, 12.8189)
+
+[node name="Sketchfab_Scene13" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.912488, 0, -1.77971, 0, 2, 0, 1.77971, 0, -0.912488, -23.5223, 0, 12.8189)
+
+[node name="Sketchfab_Scene14" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.912488, 0, -1.77971, 0, 2, 0, 1.77971, 0, -0.912488, -23.5223, 0, 22.7868)
+
+[node name="Sketchfab_Scene15" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.912488, 0, -1.77971, 0, 2, 0, 1.77971, 0, -0.912488, -17.4856, 0, 1.44311)
+
+[node name="Sketchfab_Scene9" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.565252, 0, -1.91846, 0, 2, 0, 1.91846, 0, -0.565252, -54.61, 1.24343, 121.577)
+
+[node name="Sketchfab_Scene16" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.565252, 0, -1.91846, 0, 2, 0, 1.91846, 0, -0.565252, 132.682, 0, 37.052)
+
+[node name="Sketchfab_Scene22" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(0.539621, 0, -1.92583, 0, 2, 0, 1.92583, 0, 0.539621, 132.682, 0, 37.052)
+
+[node name="Sketchfab_Scene17" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-1.99588, 0, -0.128263, 0, 2, 0, 0.128263, 0, -1.99588, 127.31, 0, 37.052)
+
+[node name="Sketchfab_Scene23" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-1.99588, 0, -0.128263, 0, 2, 0, 0.128263, 0, -1.99588, 106.123, 0, 37.052)
+
+[node name="Sketchfab_Scene24" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-1.54025, 0, -1.27579, 0, 2, 0, 1.27579, 0, -1.54025, 106.123, 1.24343, 37.0522)
+
+[node name="Sketchfab_Scene25" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.977364, 0, -1.74492, 0, 2, 0, 1.74492, 0, -0.977364, 94.459, 0, 44.225)
+
+[node name="Sketchfab_Scene26" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.977364, 0, -1.74492, 0, 2, 0, 1.74492, 0, -0.977364, 107.449, 0, 47.453)
+
+[node name="Sketchfab_Scene18" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-1.80601, 0, -0.859257, 0, 2, 0, 0.859257, 0, -1.80601, 127.31, 0, 39.973)
+
+[node name="Sketchfab_Scene21" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-1.80601, 0, -0.859257, 0, 2, 0, 0.859257, 0, -1.80601, 131.403, 1.24343, 37.0522)
+
+[node name="Sketchfab_Scene19" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.981716, 0, -1.74248, 0, 2, 0, 1.74248, 0, -0.981716, 127.31, 1.24343, 37.0522)
+
+[node name="Sketchfab_Scene" parent="WorldEnvironment" instance=ExtResource("3_devfl")]
+transform = Transform3D(1.34154, 0, 0, 0, 1.21439, 0, 0, 0, 1, 131.08, 0, 31.3272)
+
+[node name="Sketchfab_Scene20" parent="WorldEnvironment" instance=ExtResource("15_c8asx")]
+transform = Transform3D(-0.981716, 0, -1.74248, 0, 2, 0, 1.74248, 0, -0.981716, 127.31, 1.24343, 37.0522)
+
+[node name="Sketchfab_Scene27" parent="WorldEnvironment" instance=ExtResource("16_b1yj6")]
+transform = Transform3D(-120.083, 0, 0.797901, 0, 92.165, 0, -1.11711, 0, -85.7705, 52.1571, 0, 65.4602)
+
+[node name="Sketchfab_Scene29" parent="WorldEnvironment" instance=ExtResource("21_xdolk")]
+transform = Transform3D(-1.18641, 0, -2.02339, 0, 3.10062, 0, 2.37603, 0, -1.01032, 51.3516, 0.0577641, 11.161)
+
+[node name="Fontan" type="Area3D" parent="WorldEnvironment"]
+transform = Transform3D(120, 0, 3.30818e-06, 0, 120, 0, -3.30818e-06, 0, 120, -74.4348, 5.94651, 42.8266)
+script = ExtResource("3_d00gc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/Fontan"]
+transform = Transform3D(0.325, 0, 0, 0, 0.325, 0, 0, 0, 0.325, 0, 0, 0)
+shape = SubResource("BoxShape3D_kwk27")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="WorldEnvironment/Fontan"]
+transform = Transform3D(0.00394071, 0, -0.00920848, 0, 0.015573, 0, 0.00951373, 0, 0.00381427, 0.011719, -0.0190864, 0.121243)
+material_override = SubResource("StandardMaterial3D_i2x0m")
+emitting = false
+amount = 100
+lifetime = 2.0
+process_material = SubResource("ParticleProcessMaterial_hi2c5")
+draw_pass_1 = SubResource("SphereMesh_qw8kn")
+script = ExtResource("18_5k4oy")
+
+[node name="osel" parent="WorldEnvironment" instance=ExtResource("21_h3aed")]
+transform = Transform3D(10.0027, 0, 0, 0, 10.9814, 0, 0, 0, 7.44057, 121.255, 3, 130)
+script = ExtResource("22_ltxg3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="WorldEnvironment/osel"]
+libraries = {
+"": SubResource("AnimationLibrary_buwde")
+}
+
+[node name="osel2" parent="." instance=ExtResource("21_h3aed")]
+transform = Transform3D(8.786, 0, 0, 0, 12.097, 0, 0, 0, 8.58946, 128.021, 0, 142.045)
+script = ExtResource("23_25tq2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="osel2"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.980423, -0.163825, 0.109234, 0.135806, 0.938393, 0.205082, -0.140518, -0.454014, 0.951237, 50, 20, 100)
+script = ExtResource("17_0f77c")
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("25_vhv47")]
+transform = Transform3D(2.15084, 0, -0.829156, 0, 2.72009, 0, 1.19936, 0, 1.48695, 167.443, 11.4099, 24.1247)
